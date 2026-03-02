@@ -1,0 +1,154 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.navbar {
+    
+    width: 100%; 
+    max-width: none;
+    padding: 20px 5%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    background-color: #ffffff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); 
+    opacity: 1; 
+}
+
+
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+    cursor: pointer; 
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 20px 50px; 
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.main-heading {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; 
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.card {
+    flex: 1; 
+    height: 350px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+
+    display: flex;
+    
+    justify-content: center; 
+
+    align-items: flex-start; 
+    padding: 25px; 
+}
+
+
+.card-content h3 {
+    margin: 0;
+    font-weight: 500;
+}
+.card-a { background-color: #6a5acd; } 
+.card-b { background-color: #ff69b4; } 
+.card-c { background-color: #3cb371; } 
+
+@keyframes slideInFromTop {
+    
+    0% {
+        transform: translateY(-50px);
+      
+    }
+    100% {
+        transform: translateY(0);
+       
+    }
+}
+
+.card {
+    
+    animation-name: slideInFromTop;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate; 
+    
+}
+
+
+.card-a {
+    animation-delay: 0.2s; 
+}
+.card-b {
+    animation-delay: 0.4s; 
+}
+.card-c {
+    animation-delay: 0.6s;
+}
+
+
+.explore-btn {
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    cursor: pointer; 
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #0056b3;
+}
