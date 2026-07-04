@@ -1,0 +1,21 @@
+--App
+--Header *****
+--Main
+ -Home********
+   -card********
+   -card********
+   -card********
+ -courses
+   -sectionheader
+   -course
+   -course
+   -course
+ -reviewes
+   -sectionheader
+   -review
+   -review
+   -review
+ -jionus
+
+
+--footer
